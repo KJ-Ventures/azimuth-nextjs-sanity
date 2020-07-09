@@ -1,9 +1,9 @@
-[build]
+cp -R sanity-export/schemas sanity[build]
 publish = "out"
 command = "npm run export"
 
 [context.production]
-  environment = { SANITY_PROJECT_ID = "9vzhtemc", SANITY_DATASET = "production", STACKBIT_PROJECT_ID = "", WIDGET_URL = "https://widget.stackbit.com/init.js" }
+  environment = { SANITY_PROJECT_ID = "927n02b3", SANITY_DATASET = "production", STACKBIT_PROJECT_ID = "", WIDGET_URL = "https://widget.stackbit.com/init.js" }
 
 [context.staging]
-  environment = { SANITY_PROJECT_ID = "9vzhtemc", SANITY_DATASET = "staging", STACKBIT_PROJECT_ID = "5e9c939509cc5f15720e44ff", WIDGET_URL = "https://staging.widget.stackbit.com/init.js" }
+  environment = { SANITY_PROJECT_ID = "927n02b3", SANITY_DATASET = "staging", STACKBIT_PROJECT_ID = "5e9c939509cc5f15720e44ff", WIDGET_URL = "https://staging.widget.stackbit.com/init.js" }

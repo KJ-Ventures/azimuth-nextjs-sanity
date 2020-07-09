@@ -1,13 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
-import ScriptTag from 'react-script-tag';
+import Router from 'next/router'; 
 import _ from 'lodash';
 
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-
+const { GGScript } = require("ggscript");
 
 export default class Body extends React.Component {
 
@@ -16,7 +15,8 @@ export default class Body extends React.Component {
         this.handleRouteChange = this.handleRouteChange.bind(this);
     }
 
-    componentDidMount() {
+    async componentDidMount() {
+        await GGScript("/js/plugins.js");
         // Sticky header
         let offsetY = 0;
         let ticking = false;
@@ -74,7 +74,7 @@ export default class Body extends React.Component {
                         {this.props.children}
                     </main>
                     <Footer {...this.props} />
-                    <ScriptTag src="/js/plugins.js"/>
+                    
                 </div>
             </React.Fragment>
         );
