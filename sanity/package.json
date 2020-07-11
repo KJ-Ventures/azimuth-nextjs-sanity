@@ -1,5 +1,5 @@
 {
-  "name": "marketring",
+  "name": "carbatterycom",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -29,6 +29,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackbithq/azimuth-nextjs-sanity.git"
+    "url": "https://github.com/1-800-Battery/azimuth-nextjs-sanity.git"
   }
 }

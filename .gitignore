@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/sanity/node_modules
 
 # testing
 /coverage
@@ -30,4 +31,9 @@ yarn-error.log*
 
 /.idea
 /public/init-props
-
+yarn.lock
+.idea
+package.lock
+/sanity/yarn.lock
+/sanity/.idea
+/sanity/package.lock

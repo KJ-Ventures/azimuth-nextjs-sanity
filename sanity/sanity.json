@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "MarketRing"
+    "name": "CarBattery.com"
   },
   "api": {
-    "projectId": "927n02b3",
+    "projectId": "r1sgfpjk",
     "dataset": "production"
   },
   "plugins": [
