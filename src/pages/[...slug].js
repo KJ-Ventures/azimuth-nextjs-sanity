@@ -2,9 +2,15 @@ import React from 'react';
 import _ from 'lodash';
 import { sourcebitDataClient } from 'sourcebit-target-next';
 import { withRemoteDataUpdates } from 'sourcebit-target-next/with-remote-data-updates';
-
+import Document, { Head, Main, NextScript } from "next/document";
 import pageLayouts from '../layouts';
+import TagManager from 'react-gtm-module'
 
+const tagManagerArgs = {
+    gtmId: 'GTM-GTM-K7VBQDZ' 
+    
+}
+TagManager.initialize(tagManagerArgs)
 
 class Page extends React.Component {
     render() {
