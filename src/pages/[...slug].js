@@ -10,9 +10,15 @@ const tagManagerArgs = {
     gtmId: 'GTM-GTM-K7VBQDZ' 
     
 }
-TagManager.initialize(tagManagerArgs)
+
+
+
 
 class Page extends React.Component {
+
+     componentDidMount() {
+          TagManager.initialize(tagManagerArgs)
+    }
     render() {
         // every page can have different layout, pick the layout based
         // on the model of the page (_type in Sanity CMS)
