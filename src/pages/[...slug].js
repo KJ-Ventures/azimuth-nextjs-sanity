@@ -7,7 +7,7 @@ import pageLayouts from '../layouts';
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-GTM-K7VBQDZ' 
+    gtmId: process.env.GOOGLE_TAG_MANAGER 
     
 }
 
@@ -17,7 +17,11 @@ const tagManagerArgs = {
 class Page extends React.Component {
 
      componentDidMount() {
-          TagManager.initialize(tagManagerArgs)
+         if ( tagManagerArgs.gtmId && tagManagerArgs.gtmId != "")
+        
+          {
+            TagManager.initialize(tagManagerArgs)
+          }
     }
     render() {
         // every page can have different layout, pick the layout based
