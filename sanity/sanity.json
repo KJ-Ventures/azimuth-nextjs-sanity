@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "CarBattery.com"
+    "name": "KJ Ventures"
   },
   "api": {
-    "projectId": "r1sgfpjk",
+    "projectId": "d9mh86ir",
     "dataset": "production"
   },
   "plugins": [
@@ -13,7 +13,13 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "markdown"
+    "markdown",
+    "asset-source-unsplash",
+    "@sanity/code-input",
+    "google-analytics",
+    "seo-tools",
+    "asset-source-giphy",
+    "tabs"
   ],
   "env": {
     "development": {

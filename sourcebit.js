@@ -3,8 +3,7 @@ const mapDeep = require('./src/utils/map-deep');
 
 
 const isDev = process.env.NODE_ENV === 'development';
-
-console.log("YESY",process.env.SANITY_PROJECT_ID);
+ 
 module.exports = {
     plugins: [
         {
